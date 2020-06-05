@@ -5,9 +5,8 @@ const app = express();
 
 app.use(express.static('./dist/aflSite'));
 
-app.get('/*', function(req, res) {
-
-    res.sendFile(path.join(__dirname, '/dist/aflSite}/index.html'));
+app.get('*', (req, res) => {
+    res.sendFile('/dist/aflSite/index.html'); // load the single view file (angular will handle the page changes on the front-end)
 });
 
 
