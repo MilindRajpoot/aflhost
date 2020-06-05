@@ -17,7 +17,7 @@ export class TeamStatsComponent implements OnInit {
   win: number = 0;
   loss: number = 0;
   @Input() favouriteTeam: number =1;
-  roundSelect: number;
+  roundSelect: number=1;;
 
 
   constructor(private gameService: CompleteGameResultsService) {
@@ -37,7 +37,7 @@ export class TeamStatsComponent implements OnInit {
       var tempArr = [];
 
       temp.forEach(element => {
-        if (element.hteamid == this.favouriteTeam || element.ateamid == this.favouriteTeam) tempArr.push(element);
+        if (element.round == this.roundSelect) tempArr.push(element);
 
         // if (element.round > 19) tempArr.push(element.winner = "");
         // if (element.round == 24) tempArr.push(null);
@@ -53,6 +53,7 @@ export class TeamStatsComponent implements OnInit {
 
 
   setRound(x): void {
+    this.getGames();
     this.roundSelect = x;
     console.log("the selected value is " + x);
   }
