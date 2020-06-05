@@ -1,0 +1,73 @@
+/* .container {
+  background-color:white;
+  overflow: hidden;
+  align-items: center;
+  margin-left: ;
+}
+
+/* Style the links inside the navigation bar */
+/* .container a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 1px;
+} */ */
+
+/* .item-parent {} */
+
+.provider
+{
+    margin: 5% !important;
+}
+
+p
+{
+    color:black;
+}
+.row-child > a > img{
+
+    flex: 0 0 1;
+    /* margin: 0% 5%; */
+    margin: 7px;
+}
+
+
+
+
+
+table{
+
+    border: 2px solid black;
+    width: 50%;
+
+    bottom: 50px;
+    left: 25%;
+
+
+}
+
+
+
+caption{
+    caption-side: top;
+    padding-left: 300px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    color: black;
+}
+
+th{
+    text-align: center;
+    border: 2px solid black;
+    padding-right: 20px;
+    font-size: 20px;
+}
+td{
+
+    border: 2px solid black;
+    padding-right: 20px;
+}

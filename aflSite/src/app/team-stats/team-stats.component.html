@@ -1,0 +1,52 @@
+<table class="content-table">
+
+    <select name="selectRound" (change)="setRound($event.target.value)">
+        <option value="1">Round 1</option>
+        <option value="2">Round 2</option>
+        <option value="3">Round 3</option>
+        <option value="4">Round 4</option>
+        <option value="5">Round 5</option>
+        <option value="6">Round 6</option>
+        <option value="7">Round 7</option>
+        <option value="8">Round 8</option>
+        <option value="9">Round 9</option>
+        <option value="10">Round 10</option>
+        <option value="11">Round 11</option>
+        <option value="12">Round 12</option>
+        <option value="13">Round 13</option>
+        <option value="14">Round 14</option>
+        <option value="15">Round 15</option>
+        <option value="16">Round 16</option>
+        <option value="17">Round 17</option>
+        <option value="18">Round 18</option>
+        <option value="19">Round 19</option>
+        <option value="20">Round 20</option>
+    </select>
+    <caption>
+        
+    </caption>
+    <thead>
+        <tr>
+            <th>Round</th>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Venue</th>
+            <th>Date</th>
+            <th>Winner</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let game of games">
+
+            <td>{{game.round}}</td>
+            <td>{{game.hteam}}</td>
+            <td>{{game.ateam}}</td>
+            <td>{{game.venue}}</td>
+            <td>{{game.date}}</td>
+            <td>{{game.winner}}</td>
+        </tr>
+
+    </tbody>
+
+</table>
